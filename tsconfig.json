@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/assets/*": ["assets/*"],
+            "@/components/*": ["components/*"],
+            "@/config/*": ["config/*"],
+            "@/features/*": ["features/*"],
+            "@/hooks/*": ["hooks/*"],
+            "@/lib/*": ["lib/*"],
+            "@/pages/*": ["pages/*"],
+            "@/providers/*": ["providers/*"],
+            "@/styles/*": ["styles/*"],
+            "@/types/*": ["types/*"],
+            "@/utils/*": ["utils/*"]
+        },
+        "target": "es6",
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "sourceMap": true,
+        "strict": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
+}
