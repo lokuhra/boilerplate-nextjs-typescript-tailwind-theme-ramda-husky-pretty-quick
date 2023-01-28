@@ -1,11 +1,11 @@
-import { clothesSlice } from './reducers/clothes'
 import { configureStore } from '@reduxjs/toolkit'
-import weather from './reducers/clothes'
+import nft from './reducers/nft'
+import { nftSlice } from './reducers/nft'
 
 const store = configureStore({
     reducer: {
-        weather,
+        nft,
     },
 })
 
-export { store, clothesSlice }
+export { store, nftSlice }

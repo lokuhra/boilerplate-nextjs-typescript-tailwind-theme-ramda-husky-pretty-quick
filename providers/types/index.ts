@@ -5,4 +5,3 @@ export interface ThemeType extends children {
 }
 
 export type ReduxProviderType = children
-export type ReactQueryType = children
