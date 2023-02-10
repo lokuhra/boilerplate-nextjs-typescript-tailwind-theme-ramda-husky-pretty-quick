@@ -10,7 +10,12 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head />
+                <Head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="description" content="boilerplate" />
+                    <title>Boiler</title>
+                    <html lang="es" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />

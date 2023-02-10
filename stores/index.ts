@@ -1,11 +1,11 @@
-import { clothesSlice } from './reducers/clothes'
 import { configureStore } from '@reduxjs/toolkit'
-import weather from './reducers/clothes'
+import { sampleSlice } from './reducers/sampleStore'
+import sampleStore from './reducers/sampleStore'
 
 const store = configureStore({
     reducer: {
-        weather,
+        sampleStore,
     },
 })
 
-export { store, clothesSlice }
+export { store, sampleSlice }
