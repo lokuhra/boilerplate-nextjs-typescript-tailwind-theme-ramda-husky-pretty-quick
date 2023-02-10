@@ -9,10 +9,7 @@
     ],
     "plugins": ["@typescript-eslint", "react", "prettier"],
     "rules": {
-        "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/no-var-requires": "off"
+        "react/react-in-jsx-scope": "off"
     },
     "globals": {
         "React": "writable"

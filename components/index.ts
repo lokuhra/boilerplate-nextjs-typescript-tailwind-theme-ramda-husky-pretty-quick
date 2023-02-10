@@ -1,6 +1,0 @@
-export * from './Hero'
-export * from './Popular'
-export * from './Search'
-export * from './Filter'
-export * from './Dropdown'
-export * from './ToolTip'
