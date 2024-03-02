@@ -2,18 +2,8 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/assets/*": ["assets/*"],
-            "@/components/*": ["components/*"],
-            "@/config/*": ["config/*"],
-            "@/features/*": ["features/*"],
-            "@/hooks/*": ["hooks/*"],
-            "@/lib/*": ["lib/*"],
-            "@/pages/*": ["pages/*"],
-            "@/providers/*": ["providers/*"],
-            "@/styles/*": ["styles/*"],
-            "@/types/*": ["types/*"],
-            "@/utils/*": ["utils/*"]
-        },
+            "*": ["./app/*"]
+          },
         "target": "es6",
         "allowUnreachableCode": false,
         "allowUnusedLabels": false,
@@ -32,8 +22,13 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "incremental": true
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ]
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
     "exclude": ["node_modules"]
 }
