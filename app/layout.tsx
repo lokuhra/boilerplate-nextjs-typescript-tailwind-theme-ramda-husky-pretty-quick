@@ -15,11 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <>
             <html>
                 <body data-theme={theme}>
-                    {isNilOrEmpty(theme) ? (
-                        <Loading />
-                    ) : (
-                        <div className="mx-auto h-screen max-w-5xl  pt-4  text-2xl">{children}</div>
-                    )}
+                    <div className="mx-auto h-screen max-w-5xl  pt-4  text-2xl">{children}</div>
                 </body>
             </html>
         </>
